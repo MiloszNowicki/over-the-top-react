@@ -1,24 +1,13 @@
 {
   "name": "over-the-top-react",
-  "version": "0.0.1",
-  "description": "that is how magic happens",
-  "main": "build/index.js",
-  "peerDependencies": {
-    "react": "^15.5.4"
-  },
-  "dependencies": {
-    "react": "^15.5.4",
-    "webpack": "^2.6.1"
-  },
+  "version": "0.0.4",
+  "description": "how to ZUCc a MONSTER cocC",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --watch",
-    "build": "babel src --out-dir dist/lib",
-    "prepare": "babel src --out-dir dist/lib"
-  },
-  "author": {
-    "name": "Your name",
-    "email": "your email"
+    "prepublish": "babel src --out-dir dist --ignore /__tests__/"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -28,5 +17,9 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "webpack": "^2.6.1"
   }
 }
