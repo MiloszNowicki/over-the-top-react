@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch",
     "build": "babel src --out-dir dist/lib",
-    "postinstall": "babel src --out-dir dist/lib"
+    "prepublish": "babel src --out-dir dist/lib"
   },
   "author": {
     "name": "Your name",
